@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Sviy">
+	<main class="grid grid-cols-1 md:grid-cols-2 min-h-dvh">
+		<div class="grid grid-rows-3">
+			<div class="relative row-span-2">
+				<Image loading="eager" src="/hero.jpg" class="w-full h-full object-cover" width={1920} height={1080} alt="Hero"/>
+				<div class="absolute top-0 left-0 uppercase bg-primary p-5">
+					<p>ЖК Sviy- м. Дубно</p>
+					<p>вул. Станіслава Морозенка, 31 А</p>
+				</div>
+			</div>
+			<div class="bg-primary flex items-center justify-center md:px-12 py-6 px-6">
+				<Image loading="eager" src="/logo.png" alt="logo" width={1605} height={402}/>
+			</div>
+		</div>
+		<div class="bg-accent p-12 flex flex-col gap-4 text-balance">
+			<div class="relative size-40">
+				<Image loading="eager" src="/love.png" width={512} height={512} alt="" class="pl-4"/>
+				<p class="absolute uppercase text-2xl left-0 top-6">де</p>
+				<p class="absolute uppercase text-2xl -right-1/2 top-6">омріяне</p>
+				<p class="absolute uppercase text-2xl left-1/3 top-1/3">стає</p>
+				<p class="absolute uppercase text-2xl -right-1/2 top-20">своїм</p>
+			</div>
+			<p>Наразі ще тривають технічні роботи по сайту, але ви можете обирати квартиву мрії.</p>
+			<div>
+				<p>Офіс продажу працює за адресою</p>
+				<a href="https://maps.app.goo.gl/GFY5cXStyQ2wisXo7" target="_blank" class="font-semibold">м. Дубно, вул. Сурмичі, 12</a>
+			</div>
+			<div>
+				<p>Для консультації звертайтесь за телефоном</p>
+				<a href="tel:0800301036" class="font-semibold">0800 30 1036</a>
+			</div>
+			<p>Або звітайте до нас на каву.</p>
+			<div class="flex-1"></div>
+			<div class="flex flex-row gap-2 items-center">
+				<p class="uppercase font-semibold">Чекаємо на зустріч</p>
+				<Image loading="eager" src="/love.png" width={512} height={512} alt="" class="size-8"/>
+			</div>
+			<div class="flex-1"></div>
+			<div class="flex flex-row gap-4 items-center justify-between uppercase">
+				<div>
+					<p>Будує</p>
+					<p>Sviy Development</p>
+				</div>
+				<div>
+					<p>Старт будівництва</p>
+					<p>1-й квартал 2024</p>
+				</div>
+			</div>
+		</div>
+	</main>
+</Layout>
